@@ -1,3 +1,4 @@
+
 #include "funciones.h"
 #include <stdio.h>
 #include <string.h>
@@ -21,8 +22,17 @@ void pedirdatos(char productos[PRODUCTOS][NOMBRES], float precios[PRODUCTOS])
         printf("\n");
         printf("\n");
         printf("Ingresa el precio del producto <<%s>>", productos[i]);
-        scanf("%f", &precios[i]);
-        /*Esta opcion permite que despues del ingreso del nombre, pueda seguir el ingreso del producto sin errores*/
+
+        while (scanf("%f", &precios[i]) != 1)
+        {
+            printf("Error: Debe ingresar un numero válido.\n");
+
+            while (getchar() != '\n')
+            {
+                printf("Por favor, ingrese un numero: ");
+            }
+            /*Esta opcion permite que despues del ingreso del nombre, pueda seguir el ingreso del producto sin errores*/
+        }
     }
 }
 
