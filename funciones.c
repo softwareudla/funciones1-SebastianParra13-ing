@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PRODUCTOS 2
+#define PRODUCTOS 10
 #define NOMBRES 50
 
 void pedirdatos(char productos[PRODUCTOS][NOMBRES], float precios[PRODUCTOS])

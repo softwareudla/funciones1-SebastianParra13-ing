@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "funciones.h"
 
-#define PRODUCTOS 2
+#define PRODUCTOS 10
 #define NOMBRES 50
 
 /*Variables Globales*/
