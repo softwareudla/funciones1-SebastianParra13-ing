@@ -21,15 +21,15 @@ void pedirdatos(char productos[PRODUCTOS][NOMBRES], float precios[PRODUCTOS])
         printf("-----------------------------------------------------------\n");
         printf("\n");
         printf("\n");
-        printf("Ingresa el precio del producto <<%s>>", productos[i]);
+        printf("Ingresa el precio del producto <<%s>>\n", productos[i]);
 
         while (scanf("%f", &precios[i]) != 1)
         {
-            printf("Error: Debe ingresar un numero válido.\n");
+            printf("Error: Debe ingresar un numero valido.\n");
 
             while (getchar() != '\n')
             {
-                printf("Por favor, ingrese un numero: ");
+                printf("Por favor, ingrese un numero: \n");
             }
             /*Esta opcion permite que despues del ingreso del nombre, pueda seguir el ingreso del producto sin errores*/
         }
@@ -95,7 +95,7 @@ void buscarproducto(char productos[PRODUCTOS][NOMBRES], float precios[PRODUCTOS]
 {
     char buscar[50]; // variable para almacenar el nombre a buscar
 
-    printf("Ingrese el nombre del producto que deseas buscar: ");
+    printf("Ingrese el nombre del producto que deseas buscar: \n");
     fflush(stdin);
     gets(buscar);
     // Buscar nombre en el arreglo
